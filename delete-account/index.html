@@ -1,0 +1,165 @@
+<!DOCTYPE html><html lang="en"><head><style id="react-native-stylesheet"></style>
+    <meta charset="utf-8">
+    <meta httpequiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Delete your account — Deluluify</title>
+    <!-- The `react-native-web` recommended style reset: https://necolas.github.io/react-native-web/docs/setup/#root-element -->
+    <style id="expo-reset">
+      /* These styles make the body full-height */
+      html,
+      body {
+        height: 100%;
+      }
+      /* These styles disable body scrolling if you are using <ScrollView> */
+      body {
+        overflow: hidden;
+      }
+      /* These styles make the root element full-height */
+      #root {
+        display: flex;
+        height: 100%;
+        flex: 1;
+      }
+    </style>
+  <meta name="theme-color" content="#0E0A0D">
+<link rel="icon" href="/favicon.ico"><link rel="preload" href="/_expo/static/css/site-7d062de6a600873a322ec52273592f66.css" as="style">
+<link rel="stylesheet" href="/_expo/static/css/site-7d062de6a600873a322ec52273592f66.css"><style id="expo-image-styles">
+[data-expoimage] .cross-dissolve {
+  transition-property: opacity;
+  animation-fill-mode: forwards;
+}
+[data-expoimage] .cross-dissolve-start:not(.transitioning) {
+  opacity: 0;
+}
+[data-expoimage] .cross-dissolve-active {
+  opacity: 1;
+}
+[data-expoimage] .cross-dissolve-end {
+  opacity: 0;
+}
+[data-expoimage] .flip-from-left {
+  transition-property: transform, opacity;
+  transition-timing-function: var(--expo-image-timing,linear), steps(2, jump-none) !important;
+  transform-origin: center;
+
+}
+[data-expoimage] .flip-from-left-container {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  perspective: 1000px;
+}
+[data-expoimage] .flip-from-left-start:not(.transitioning) {
+  transform:  translateZ(calc(var(--expo-image-width,1000px) * -1.25)) rotateY(-180deg);
+  opacity: 0;
+}
+[data-expoimage] .flip-from-left-active {
+  transform: translateZ(0px) rotateY(0) ;
+  opacity:1;
+}
+[data-expoimage] .flip-from-left-end {
+  transform:  translateZ(calc(var(--expo-image-width,1000px) * -1.25)) rotateY(180deg);
+  opacity: 0;
+}
+[data-expoimage] .flip-from-right {
+  transition-property: transform, opacity;
+  transition-timing-function: var(--expo-image-timing,linear), steps(2, jump-none) !important;
+  transform-origin: center;
+}
+[data-expoimage] .flip-from-right-container {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  perspective: 1000px;
+}
+[data-expoimage] .flip-from-right-start:not(.transitioning) {
+  transform:  translateZ(calc(var(--expo-image-width,1000px) * -1.25)) rotateY(180deg);
+  opacity: 0;
+}
+[data-expoimage] .flip-from-right-active {
+  transform: translateZ(0px) rotateY(0) ;
+  opacity:1;
+}
+[data-expoimage] .flip-from-right-end {
+  transform:  translateZ(calc(var(--expo-image-width,1000px) * -1.25)) rotateY(-180deg);
+  opacity: 0;
+}
+[data-expoimage] .flip-from-top {
+  transition-property: transform, opacity;
+  transition-timing-function: var(--expo-image-timing,linear), steps(2, jump-none) !important;
+  transform-origin: center;
+}
+[data-expoimage] .flip-from-top-container {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  perspective: 1000px;
+}
+[data-expoimage] .flip-from-top-start:not(.transitioning) {
+  transform:  translateZ(calc(var(--expo-image-height,1000px) * -1.5)) rotateX(180deg);
+  opacity: 0;
+}
+[data-expoimage] .flip-from-top-active {
+  transform: translateZ(0px) rotateX(0) ;
+  opacity:1;
+}
+[data-expoimage] .flip-from-top-end {
+  transform:  translateZ(calc(var(--expo-image-height,1000px) * -1.5)) rotateX(-180deg);
+  opacity: 0;
+}
+[data-expoimage] .flip-from-bottom {
+  transition-property: transform, opacity;
+  transition-timing-function: var(--expo-image-timing,linear), steps(2, jump-none) !important;
+  transform-origin: center;
+}
+[data-expoimage] .flip-from-bottom-container {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  perspective: 1000px;
+}
+[data-expoimage] .flip-from-bottom-start:not(.transitioning) {
+  transform:  translateZ(calc(var(--expo-image-height,1000px) * -1.25)) rotateX(-180deg);
+  opacity: 0;
+}
+[data-expoimage] .flip-from-bottom-active {
+  transform: translateZ(0px) rotateX(0) ;
+  opacity:1;
+}
+[data-expoimage] .flip-from-bottom-end {
+  transform:  translateZ(calc(var(--expo-image-height,1000px) * -1.25)) rotateX(180deg);
+  opacity: 0;
+}
+[data-expoimage] .image-timing-linear {
+  --expo-image-timing: linear;
+}
+[data-expoimage] .image-timing-ease-in {
+  --expo-image-timing: ease-in;
+}
+[data-expoimage] .image-timing-ease-out {
+  --expo-image-timing: ease-out;
+}
+[data-expoimage] .image-timing-ease-in-out {
+  --expo-image-timing: ease-in-out;
+}
+</style><style id="expo-generated-fonts">@font-face{font-family:"Fraunces_800ExtraBold";src:url("/assets/node_modules/@expo-google-fonts/fraunces/800ExtraBold/Fraunces_800ExtraBold.1fca6eacc1fd7d8bb65c1b3c881d057a.ttf");font-display:auto}@font-face{font-family:"Fraunces_700Bold_Italic";src:url("/assets/node_modules/@expo-google-fonts/fraunces/700Bold_Italic/Fraunces_700Bold_Italic.c051d8ea6e94f62ad79ed57304d75165.ttf");font-display:auto}@font-face{font-family:"CaveatBrush_400Regular";src:url("/assets/node_modules/@expo-google-fonts/caveat-brush/400Regular/CaveatBrush_400Regular.91a4b7550bea09847dec3314935df7fa.ttf");font-display:auto}@font-face{font-family:"Caveat_700Bold";src:url("/assets/node_modules/@expo-google-fonts/caveat/700Bold/Caveat_700Bold.a6778b61e5f1b85a33ba022438008240.ttf");font-display:auto}@font-face{font-family:"BricolageGrotesque_400Regular";src:url("/assets/node_modules/@expo-google-fonts/bricolage-grotesque/400Regular/BricolageGrotesque_400Regular.6586800789b30b19bbaeb349ca5d240a.ttf");font-display:auto}@font-face{font-family:"BricolageGrotesque_500Medium";src:url("/assets/node_modules/@expo-google-fonts/bricolage-grotesque/500Medium/BricolageGrotesque_500Medium.1363130c7bdf956d164cb7e605619849.ttf");font-display:auto}@font-face{font-family:"BricolageGrotesque_600SemiBold";src:url("/assets/node_modules/@expo-google-fonts/bricolage-grotesque/600SemiBold/BricolageGrotesque_600SemiBold.e5b5fc505484ff3ca24da73cba67c660.ttf");font-display:auto}@font-face{font-family:"BricolageGrotesque_700Bold";src:url("/assets/node_modules/@expo-google-fonts/bricolage-grotesque/700Bold/BricolageGrotesque_700Bold.2f7de7a336f650f9cee5ed919cc3b003.ttf");font-display:auto}@font-face{font-family:"BricolageGrotesque_800ExtraBold";src:url("/assets/node_modules/@expo-google-fonts/bricolage-grotesque/800ExtraBold/BricolageGrotesque_800ExtraBold.5bfb4fa1f8907c768231d97bc27e8df9.ttf");font-display:auto}</style></head>
+
+  <body style="background-color: rgb(14, 10, 13);">
+    <!-- Use static rendering with Expo Router to support running without JavaScript. -->
+    <noscript>
+      You need to enable JavaScript to run this app.
+    </noscript>
+    <!-- The root element for your Expo app. -->
+    <div id="root"><div class="css-g5y9jx r-13awgt0"><div class="css-g5y9jx r-13awgt0"><div style="position: absolute; inset: 0px; pointer-events: none; visibility: hidden;"></div><div class="css-g5y9jx r-13awgt0"><div class="css-g5y9jx r-13awgt0 r-1p0dtai r-1d2f490 r-u8s1d r-zchlnj r-ipm5af" style="background-color: rgb(242, 242, 242); display: flex;"><div class="css-g5y9jx r-13awgt0"><div class="css-g5y9jx r-13awgt0" style="background-color: rgb(14, 10, 13);"><div class="site" data-testid="site"><header class="nav"><div class="nav-inner"><a href="/" class="logo">Deluluify</a><nav aria-label="Site"><a href="/how-it-works">How it works</a><a href="/#login" data-testid="site-login">Log in</a></nav><a href="/#signup" class="btn small" data-testid="site-cta">Start free</a></div></header><main><div class="legal"><h1>Delete your Deluluify account</h1><p>You can delete your Deluluify account and everything in it at any time. It takes a few seconds.</p><h2>In the app</h2><ol><li>Open Deluluify.</li><li>Go to <b>Settings</b>.</li><li>Tap <b>Delete my account &amp; data</b>, then <b>Yes, delete my account</b>.</li></ol><h2>Can’t open the app?</h2><p>Email <a href="mailto:support@deluluify.com?subject=Delete%20my%20account">support@deluluify.com</a> from the email address on your account with the subject “Delete my account”. We’ll delete it within 30 days and let you know when it’s done.</p><h2>What gets deleted</h2><p>Your profile, dreams, Solulus, projects and numbers, steps, check-ins, Bestie chats, your selfie, and the images and videos stored on our servers. Boards you posted to Manifest are removed too. Backups roll off within 30 days.</p><h2>What we keep</h2><p>Nothing that identifies you. Purchase records are kept by Apple or Google and our subscription provider, RevenueCat, as the law requires. Deleting your account doesn’t cancel a subscription, so cancel it in Google Play or the App Store too.</p></div></main><footer><a href="/" class="logo">Deluluify</a><p>Dream big. Then make a damn plan.</p><p><a href="/how-it-works">How it works</a> · <a href="/pricing">Billing</a> · <a href="/privacy">Privacy</a> · <a href="/terms">Terms</a> · <a href="/delete-account">Delete account</a> · <a href="mailto:support@deluluify.com">support@deluluify.com</a></p><p class="small">© 2026 Deluluify. Stock photos via Pexels. Imagined, not predicted.</p></footer></div></div></div></div></div></div></div></div>
+  <script src="/_expo/static/js/web/entry-700e420e1e9a17e012ad2c024f56fec4.js" defer=""></script>
+
+
+<div style="position: fixed; left: 0px; top: 0px; width: 0px; height: 0px; z-index: -1; overflow: hidden; visibility: hidden; transition-duration: 0.05s; transition-property: padding; transition-delay: 0s; padding-top: env(safe-area-inset-top); padding-bottom: env(safe-area-inset-bottom); padding-left: env(safe-area-inset-left); padding-right: env(safe-area-inset-right);"></div><div style="position: fixed; left: 0px; top: 0px; width: 0px; height: 0px; z-index: -1; overflow: hidden; visibility: hidden; transition-duration: 0.05s; transition-property: padding; transition-delay: 0s; padding-top: env(safe-area-inset-top); padding-bottom: env(safe-area-inset-bottom); padding-left: env(safe-area-inset-left); padding-right: env(safe-area-inset-right);"></div></body></html>
